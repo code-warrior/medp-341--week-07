@@ -4,7 +4,7 @@ window.onload = () => {
         thirdDiv = document.getElementsByClassName(`third-div`)[0],
         css = `background-color: #bada55; border-radius: 4px; padding: 4px;`;
 
-    console.log(firstDiv.textContent);
-    console.log(secondDiv.textContent);
-    console.log(thirdDiv.textContent);
+    console.log(`%c${firstDiv.textContent}`, css);
+    console.log(`%c${secondDiv.textContent}`, css);
+    console.log(`%c${thirdDiv.textContent}`, css);
 };
