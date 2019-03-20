@@ -1,0 +1,48 @@
+:root {
+   --box-width: 300px;
+   --background-color--first: darkseagreen;
+   --background-color--second: antiquewhite;
+   --background-color--third: cornsilk;
+   --transition-duration: 1s;
+   --box-padding: 12px;
+}
+
+body {
+   font-family: Poppins, sans-serif;
+   transition: var(--transition-duration);
+}
+
+h1 {
+   text-align: center;
+}
+
+button {
+   width: var(--box-width);
+   font-size: .8rem;
+   margin: calc(2 * var(--box-padding)) auto;
+   display: block;
+   border: 0;
+   padding: var(--box-padding);
+   background-color: var(--background-color--second);
+}
+
+[data-hover-area] {
+   margin: auto;
+   padding: var(--box-padding);
+   width: calc(var(--box-width) - (calc(2 * var(--box-padding))));
+   height: var(--box-width);
+   background-color: var(--background-color--first);
+   transition: var(--transition-duration);
+}
+
+.background-color--darkseagreen {
+   background-color: var(--background-color--first);
+}
+
+.background-color--antiquewhite {
+   background-color: var(--background-color--second);
+}
+
+.background-color--cornsilk {
+   background-color: var(--background-color--third);
+}
